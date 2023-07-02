@@ -16,4 +16,4 @@ test("Product Page add to Basket", async( {page }) =>
     await expect(basketCounter).toHaveText("1")
 
 }
-)
+)g
