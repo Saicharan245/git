@@ -1,7 +1,7 @@
 import type  { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch:  ["**/*.ts"]
+  testMatch:  ["**/*.js"]
 };
 reporter: [["dot"], ["json", { 
   outputFile:"jsonReports/jsonReport.json"
