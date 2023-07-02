@@ -57,3 +57,21 @@ test.only("Bootstrap dropdown", async ({ page }) => {
             }).click();
     }
 })
+
+test('verify',async({page})=>{
+await page.goto("https://www.demoblaze.com/index.html");
+ const pageTitle= await page.title();
+ console.log('page title is:',pageTitle);
+ await expect(page).toHaveTitle('STORE');
+
+})
+
+test('Verify the script',async({ page })=>{
+   await page.goto("https://naveenautomationlabs.com/");
+   const pageHeader= await page.title();
+   console.log("Page title is :",pageHeader);
+   await expect(page).toHaveTitle('Welcome to Naveen AutomationLabs - naveen automationlabs');
+
+    }
+
+)
